@@ -115,7 +115,7 @@ class GPT(nn.Module):
         self.cfg = cfg
         self.embed = Embeddings(cfg)
         self.blocks = nn.ModuleList([Block(cfg) for _ in range(cfg.n_layer)])
-        self.ln_f = LayerNorm(cfg.n_embd)                          # final LN (needed in pre-LN)
+        self.ln_f = LayerNorm(cfg.n_embd) if cfg.pre_ln else nn.Identity()   # post-LN blocks already end in a LayerNorm                         # final LN (needed in pre-LN)
         self.lm_head = nn.Linear(cfg.n_embd, cfg.vocab_size, bias=False)
         if cfg.tie_weights:
             self.lm_head.weight = self.embed.wte.weight            # one shared tensor

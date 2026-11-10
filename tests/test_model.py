@@ -134,3 +134,9 @@ def test_can_overfit_one_batch():
         _, loss = model(x, y)
         opt.zero_grad(); loss.backward(); opt.step()
     assert loss.item() < 0.5 * first
+def test_post_ln_gpt_runs():
+    cfg = GPTConfig(n_layer=2, n_head=2, n_embd=32, block_size=16, vocab_size=50, pre_ln=False)
+    m = GPT(cfg)
+    assert isinstance(m.ln_f, torch.nn.Identity)
+    logits, loss = m(torch.randint(0, 50, (2, 8)), torch.randint(0, 50, (2, 8)))
+    assert logits.shape == (2, 8, 50) and torch.isfinite(loss)
