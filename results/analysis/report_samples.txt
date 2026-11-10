@@ -1,0 +1,130 @@
+### temperature=0 | prompt='Once upon a time, there was a little girl named'
+Once upon a time, there was a little girl named Lily. She had a big, soft pillow that she loved to hug. One day, Lily's pillow was very dirty. She wanted to clean it, but she didn't know how.
+Lily asked her mom for help. Her mom said, "Let's clean your pillow together." They took the pillow to the sink and washed it. The pillow became clean and shiny.
+Lily was happy to see her pillow clean. She hugged it and said, "Thank you, Mom!" From that day on, Lily always kept her pillow clean and they lived happily ever after.
+
+### temperature=0 | prompt='Tom and his dog went to the park. They'
+Tom and his dog went to the park. They saw a big slide. Tom wanted to go on the slide, but he was scared. He said to his dog, "I don't want to go on the slide. It is too high and fast."
+The dog said, "Don't be scared, Tom. I will help you. I will push you on the slide. Then you can go on the slide."
+Tom was still scared, but he trusted the dog. He said, "Okay, dog. I will go on the slide. But you have to hold my hand. I will hold your hand."
+The dog pushed Tom on the slide. Tom went down the slide very fast. He felt the wind in his hair and the sun on his face. He
+
+### temperature=0 | prompt='The little bird was sad because'
+The little bird was sad because it was lost. It had lost its way and could not find its family. The bird wanted to help the little bird find its family.
+The bird flew around and saw a big tree. It thought the tree would be a good place to rest. The bird flew up and sat on the tree. It was very happy to be up there.
+But then, something unexpected happened. The tree started to shake and make noise. The little bird was scared and flew away. The tree was not a tree at all! It was a big, friendly giant who had been hiding in the tree. The giant was not mean, but he was just lonely. He had found a new friend in the tree.
+
+### temperature=0 | prompt='One day, a big storm came and'
+One day, a big storm came and made a lot of noise. The wind blew hard and the rain fell down. The people in the town were scared. They did not know what to do.
+A little girl named Lily had an idea. She said, "Let's unite and work together to make the storm go away." The people agreed. They all worked together to make the storm go away.
+After the storm, the sun came out and the sky was clear. The people were happy and safe. They learned that when they unite and work together, they can make the world a better place.
+
+### temperature=0 | prompt='Lily wanted to bake a cake for her mom, but'
+Lily wanted to bake a cake for her mom, but she did not have enough eggs. She asked her mom, "Mom, can we have some eggs for the cake?"
+Her mom said, "No, Lily, we have enough eggs for the cake. We have to wait until it is ready. Then we can bake it together."
+Lily was sad. She really wanted to bake a cake. She thought of a plan. She said, "Mom, can we bake a cake for mom? I want to make a cake for mom. She will be happy."
+Her mom said, "Yes, Lily, we can bake a cake for mom. But first, we have to wait for dad to come home. He will be home soon. He will be home soon. He will
+
+### temperature=0.7 | prompt='Once upon a time, there was a little girl named'
+Once upon a time, there was a little girl named Lily. She loved to play with her toys and run around the house. One day, Lily found a big, red ball in her room. It was very pretty, with a long string attached to it.
+Lily wanted to show her new toy to her friend, Tom. She picked it up and ran to Tom's house. When she got there, she showed Tom the big, red ball. Tom liked it too. He played with the ball and threw it high in the sky.
+Then, Lily's mom called her. "Lily, come here! It's time to eat," she said. Lily and Tom went to the kitchen. They saw a big bowl of yummy food. Tom took a small piece of the big,
+
+### temperature=0.7 | prompt='Once upon a time, there was a little girl named'
+Once upon a time, there was a little girl named Lily. She was very sleepy and wanted to take a nap. So, she lay in her bed and closed her eyes.
+While she was sleeping, Lily heard a knock on her door. She opened it and saw a big, friendly bear. The bear said, "Hi, I am Bear. Can I nap with you?" Lily said, "Yes, we can nap together."
+Lily and Bear talked and laughed. They had fun and forgot about being sleepy. When they woke up, they felt happy and ready to play again. They played all day and became best friends.
+
+### temperature=0.7 | prompt='Tom and his dog went to the park. They'
+Tom and his dog went to the park. They saw a big tree with a hole in it. Tom wanted to see what was inside the hole. He put his hand in the hole and pulled it. He saw something shiny and long. It was a ring. He did not know what it was.
+Tom pulled and pulled on the ring. It made a loud noise. He was scared. He did not know it was a ring. He thought it was a toy. He ran to the hole and tried to pull it off. But it was too tight. The ring was too big and the ring broke. Tom fell in the hole with a thud. He cried.
+His owner came and saw him. She was angry. She said, "Tom, what did you do?
+
+### temperature=0.7 | prompt='Tom and his dog went to the park. They'
+Tom and his dog went to the park. They saw a big slide. Tom wanted to go on the slide, but his dog said no. Tom was sad and his dog was scared.
+Tom had an idea. He found a stick. He threw the stick far away. The dog ran after the stick. Tom was happy. He played with the stick all day.
+Then, Tom saw a girl. The girl was sad. She had lost her toy. Tom wanted to help her. He told the girl to go with him. The girl went with Tom to the slide. They were happy. The girl went with Tom and the dog. They all played together and had fun.
+
+### temperature=0.7 | prompt='The little bird was sad because'
+The little bird was sad because he was all alone. He wanted to fly high in the sky, but he was too scared. His heart started to beat and he was filled with fear.
+Then something magical happened. He saw a bright, shiny, colourful fly. It was so beautiful and he was so happy. He watched it fly up and down, and he felt so free.
+He spread his wings, and the fly flew higher and higher. He was so happy and he was not scared anymore. And he was never alone again.
+
+### temperature=0.7 | prompt='The little bird was sad because'
+The little bird was sad because he had no friends. He flew around looking for someone to play with. He looked in the trees and on the ground, but he couldn't find anyone. The little bird was very lonely.
+As the sun began to set, the little bird saw a big dog. The dog was barking and jumping. The little bird was scared and wanted to go away, but the big dog was too fast. The big dog caught the little bird and took him away. The little bird was very scared and wished it had never gone so close to the big dog.
+
+### temperature=0.7 | prompt='One day, a big storm came and'
+One day, a big storm came and started to rain. The rain was very strong and heavy. The people in the town were scared. They tried to find a safe place to hide, but the rain was too strong.
+Then, a nice man named Tom decided to help. He brought a big umbrella and put it on the ground. He told everyone to use it to cover themselves. The people were happy and thanked Tom.
+The storm went away, and the sun came out. The sky was clear and it was beautiful. The people were happy and thanked Tom. They all played together under the big umbrella. The storm went away, and they had a great day.
+
+### temperature=0.7 | prompt='One day, a big storm came and'
+One day, a big storm came and made a terrible mess. The wind blew and the trees were broken. The animals were sad and scared.
+A little girl named Lily wanted to help. She saw a man who looked very sad. "Why are you sad?" she asked. The man said, "I lost my toy. I am very sad."
+Lily wanted to help. She looked around and found the toy under a bush. She gave it to the man. The man was happy and said, "Thank you." Lily felt good inside.
+The storm went away, and the sun came out. The sun came out and the trees were not terrible anymore. The wind blew harder, and the trees started to dry. The birds were happy again. Lily felt good because
+
+### temperature=0.7 | prompt='Lily wanted to bake a cake for her mom, but'
+Lily wanted to bake a cake for her mom, but she was too busy. She saw the oven and the mixer on the counter. She did not know what to do. She saw a small flame on the stove. She thought it was pretty. She wanted to put it in the oven.
+She waited until the cake was done. She took the knife and put it on a plate. She ran to the oven and put the cake on the table. She waited for it to bake. She smelled something sweet and yummy. She did not know that the cake was hot. She did not know that the cake was hot. She did not know that the flame was hot and that it was not a toy. It was a hot and dangerous thing.
+When the cake was ready, Lily took
+
+### temperature=0.7 | prompt='Lily wanted to bake a cake for her mom, but'
+Lily wanted to bake a cake for her mom, but she did not know how. She asked her dad, but he said no. They asked her to help her. They took the clay outside and started to bake.
+Lily was very happy. She drew a big heart on the paper and drew a nice flower. She did not think a flower could be anything they needed.
+Then, she saw the flower on the palm. She was very surprised. She called her dad and said, "Dad, I made a flower for you! It is a gift from Grandma! She gave me a new dress and a new toy!"
+Her dad smiled and hugged her. He said, "Thank you, Lily! You are very charming and sweet. You are very sweet. I love to bake
+
+### temperature=1.0 | prompt='Once upon a time, there was a little girl named'
+Once upon a time, there was a little girl named Lily. She loved to play dress up with her friends. One day, she found a pretty dress in her mom's closet. Lily put on the dress and felt very happy.
+Next, Lily went outside to play with her friends. They were all playing a fun game. They ran, jumped, and laughed lots. Lily saw her friend, Max, and wanted to play too. Lily said, "Max, let's play dress up and have fun!" Max liked the idea and they all played dress up together.
+They had a great time playing with the flexible dress all day long. When it was time for Lily and Max to go inside, they said goodbye. They promised to meet again soon to play dress up and play dress
+
+### temperature=1.0 | prompt='Once upon a time, there was a little girl named'
+Once upon a time, there was a little girl named Amy. Amy was very sleepy and liked to play with her toys. One day, Amy saw her mom lift a big bag of clay outside. She was curious about what it was and wanted to see.
+Amy thought it was a new toy and she kicked it hard. The clay made a big mess on the ground. There was a small bug on the ground and was hurt. Amy felt sad for the bug and wanted to help. She had an idea to move the bug away from the clay. She took her toy and moved it through a hole. The bug looked at Amy and the messy clay.
+Suddenly, the bug started to grow very big! It grew and grew until it was a real bug! It was not a bug,
+
+### temperature=1.0 | prompt='Tom and his dog went to the park. They'
+Tom and his dog went to the park. They saw a big tree with a hole. A small hole is in the tree. Tom and his dog looked at the hole. They saw rocks and sticks. They wanted to climb through the hole.
+"Look, Max, a hole!" Tom said. He pushed a stick under the hole. Max moved the stick. He saw a red ball stuck. It was stuck too. "Me, yes, yes!" he said. He pushed the ball with his mouth. The ball frry and went deep. It let go of the ball. The hole was over the tree. Tom pushed the ball again. They tried again and again. They did not give up.
+"Look, Tom, a red ball!" Max said. He pushed a
+
+### temperature=1.0 | prompt='Tom and his dog went to the park. They'
+Tom and his dog went to the park. They saw a big stage with many people and planes. Tom and his dog were curious and wanted to see the performings. He jumped on the stage and looked into the restaurant. He saw a man with a big table with a picture of a lion on it. He wanted to stick to the lion toy or the picture.
+Tom ran to the man and said, "Hello, dog. Do you want to see our lion?"
+The man laughed and said, "No, please. His name is Rex. He is a very big and strong lion." He smiled and stood up.
+The lion was frightened and tried to run away. Rex saw him and said, "Do you want to play?"
+Tom nodded and said
+
+### temperature=1.0 | prompt='The little bird was sad because'
+The little bird was sad because he was all alone. He wanted to soar high on the roof, but he was too scared. His heart made a big simpdick and he couldn't seem to fly to the top.
+One day, the little bird saw a big puddle outside. He wanted to soak in the puddle, but he didn't know if he could. Then, he heard a noise. A friendly flower in the puddle said, "Don't worry, little bird! I can help you soak in the splash." The mommy and the little bird worked together to get the puddle in the longest puddle ever. They both flew back and soaked in the water - the water helped the little bird and all his friends breaturned in
+
+### temperature=1.0 | prompt='The little bird was sad because'
+The little bird was sad because he was all alone. He cried and wanted someone to help him.
+Then, a big, wise elephant had an idea to rescue the little bird. The elephant used his big trunk to lift a big rock into the river. The little bird helped move the rock away, and the bird could see his toy again.
+"Thank you for rescuing me, Mandy!" said the elephant. The elephant hugged the little bird and said, "I am so thankful!" Then, the elephant disappeared into the sky. The little bird flew back to his family, happy to have helped new friends.
+
+### temperature=1.0 | prompt='One day, a big storm came and'
+One day, a big storm came and started to rain. The rain was smelly. The sun was shining and the birds were singing. The sky started to shine, and the rocks all around them. Theckeys raindroped around trees and bushes. The children were sad because they could not see their homes anymore.
+In the rain, there was a hole in the igloo. A sleepy penguin named Ann came to play. Ann asked, "Why are you sad, smelly penguin?" The penguin replied, "I lost my mom and I need her mommy and dad!" Ann thought for a moment and said, "I can help you find your mom and dad."
+Ann and the wet penguin looked all over the igloo. They looked in the river and behind trees.
+
+### temperature=1.0 | prompt='One day, a big storm came and'
+One day, a big storm came and disappeared. The sun was in the sky and it was dark and a little space. It started to rain and the wind was very strong. Tim was frightened. He saw his friend, Ben, and they wanted to find a way to stay dry.
+Tim said to Ben, "Don't be frightened, I will help you." Ben said, "Thank you, Tim. Let's practice!" They used a big box. They thought and thought. Then, they could stay dry and still play on a sunny day.
+Tim and Ben were happy. They played on the special box all day. When it was time to go home, Tim and Ben went back to the big tree. They were not frightened anymore. They knew they could keep
+
+### temperature=1.0 | prompt='Lily wanted to bake a cake for her mom, but'
+Lily wanted to bake a cake for her mom, but she was scared. There was a big machine that presses fire and turns in the kitchen. Lily was scared. She hid under the rocks and locked the door.
+Then something strange happened. The machine made a loud noise, but it did not work anymore. Instead, it moved fast and made a bright flash. Then, it off the paper and back to the wall. It tripped on the flower and fell down. Lily was sad and hurt.
+Lily started to cry. She lost her mom and her key. She wanted to go back to the laser and mom too. But she could not find the key. She did not know the button. She only knew the strange mark. She was too far away. She felt thirsty and sad
+
+### temperature=1.0 | prompt='Lily wanted to bake a cake for her mom, but'
+Lily wanted to bake a cake for her mom, but she did not know how. Her mom took her to the mixer and a mixer said they could take some time to mix it and mix it. Lily was happy to help.
+They turned on the mixer and the mix began to bake. Lily had helped her mom mix the batter faster and faster. She was having fun with her mother. But then, something bad happened. The mixer broke in two. Lily felt embarrassed.
+"Oh no!" she said to her mom. "My cake is on fire! I can't eat it anymore!"
+Mom looked at the broken mixer and the cake burned too. Smokement made their tongues hurt. Lily felt bad. She said to her mom, "I'm
+

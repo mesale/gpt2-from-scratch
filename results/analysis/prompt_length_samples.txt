@@ -1,0 +1,74 @@
+### prompt_tokens=1 | story 0
+PROMPT: Once
+CONTINUATION:  upon a time, there was a young boy named Tim. Tim loved to build with his toy blocks. He would build big towers with all the blocks he built. One day, Tim wanted to build a tall tower. He started to put one block on top of another.
+Tim's friend, Sam, came over to play. Sam saw the tower and said, "Wow! A tall tower! Can I help?" Tim said, "Yes, let's build it together!" They worked
+
+### prompt_tokens=1 | story 1
+PROMPT: Tom
+CONTINUATION:  and Lily were playing in the rain. They liked to make mud pies and splash each other with water. They had a big bucket of water and poured it on their pies. They laughed and had fun.
+"Look, Lily, I made a big mud pie!" Tom said, holding up a small brown thing. It was white and sticky and had flowers on it. "It smells good!"
+"Wow, Tom, that is a nice mud pie!" Lily said,
+
+### prompt_tokens=1 | story 2
+PROMPT: Once
+CONTINUATION:  upon a time, there was a little boy named Tim. He had a big, soft bed in his room. Tim liked to sleep on his bed and play with his toys.
+One day, Tim found a small, wet bug under his bed. He was very surprised. Tim thought the bug was just a little bug. He wanted to help the bug. So, Tim put on his raincoat and went outside.
+Tim found the bug under his bed. He gave the bug a
+
+### prompt_tokens=4 | story 0
+PROMPT: Once upon a time
+CONTINUATION: , there was a little girl named Sue. Sue had a special power. She could make things vanish. One day, Sue saw a small, delicate bird with a hurt wing. She wanted to help the bird, so she took it home.
+Sue took care of the bird every day. She made it feel better. She played with it and gave it food and water. Sue's friends saw her being kind and wanted to be her friend too.
+One day, Sue took out her
+
+### prompt_tokens=4 | story 1
+PROMPT: Tom and Lily were
+CONTINUATION:  twins who liked to play together. One day, they found a big box in their room. They opened the box and saw many things inside. They saw a doll, a car, a book, a book, and a book.
+"Can we keep them?" Tom asked, holding the doll.
+"No, they are mine. You have your own toys," Lily said, holding the doll.
+"But I like these things. They are fun and pretty," Tom said, holding
+
+### prompt_tokens=4 | story 2
+PROMPT: Once upon a time
+CONTINUATION: , there was a little girl named Sue. Sue loved to read novels. She had a big book with many novels in her room. Sue was very excited to read her novels every day.
+One day, Sue could not find her novel. She looked under her bed, behind the door, and in the toy box. She felt sad and sat down to think of her favorite novel. Sue did not know that her novel was magic.
+Leo was persistent. He went
+
+### prompt_tokens=16 | story 0
+PROMPT: Once upon a time, in a warm and sunny place, there was a big
+CONTINUATION:  tree. Under the tree, there was a small tree. The tree had a tiny garden with a nice green frog living there. The frog liked to watch the water come down to the tree.
+One day, a little boy named Tim came to the tree. He saw the frog sitting in its warm, green frog. Tim said, "Hello, frog! Will you be my friend?" The frog nodded its head and said, "Yes, Tim! I would love to be your friend
+
+### prompt_tokens=16 | story 1
+PROMPT: Tom and Lily were playing with their toys in the living room. They liked to
+CONTINUATION:  pretend they were pirates and use a big cardboard box as a ship. Tom had a red truck and Lily had a blue doll.
+"Look, I made a treasure map!" Tom said, pointing to his map. "It has a red victory and a big map."
+Lily looked at her map and saw many of places. She had never seen anything like it before. She wanted to find out more about it, but she also had a red car.
+"Tom,
+
+### prompt_tokens=16 | story 2
+PROMPT: Once upon a time there was a little girl named Lucy. She loved to go
+CONTINUATION:  on adventures. One day she decided to go on an adventure. She wanted to find something special, so she packed all her things.
+As she walked, Lucy noticed a big, dark cave. "Excuse me, what is this?" she asked, and it was very dark inside. She slowly peeked through the cave and saw that it was full of sparkling creatures.
+Suddenly, Lucy heard a voice coming from the cave. "Hello! Who are you
+
+### prompt_tokens=64 | story 0
+PROMPT: Once upon a time, in a warm and sunny place, there was a big pit. A little boy named Tom liked to play near the pit. One day, Tom lost his red ball. He was very sad.
+Tom asked his friend, Sam, to help him search for the ball. They looked high and
+CONTINUATION:  low, near the pit, but the ball was still lost. They did not give up. They asked their friends in the park, "Have you seen my red ball?"
+Finally, they found the ball near the pit. Tom was very happy. He said, "Thank you, Sam!" They played with the ball and had lots of fun. Tom learned that when you are sad, you can still find what you lost.
+
+### prompt_tokens=64 | story 1
+PROMPT: Tom and Lily were playing with their toys in the living room. They liked to build towers and bridges with their blocks and cars. Tom was very proud of his tall tower. He wanted to make it even taller, so he reached for more blocks.
+"Tom, can I have some blocks
+CONTINUATION:  too?" Lily asked, holding a block that was not bigger than Tom's.
+"No, Lily, these are my blocks. You have a lot of blocks. You are the best," Tom said, holding the block.
+They both reached for the block and pulled hard. They started to pull and tug on the block. They did not hear their mom coming into the room.
+"Tom, Lily, what are you doing? Why are you fighting over a block?" Mom asked
+
+### prompt_tokens=64 | story 2
+PROMPT: Once upon a time there was a little girl named Lucy. She loved to go to the store to buy sweets with her mom and dad. On this special day, Lucy entered the store with her mom and dad, feeling so excited.
+As they were looking around, Lucy noticed a little girl playing with a
+CONTINUATION:  toy. She was so jealous of her toy and wanted to get it for her, but her parents said no and said that it was not allowed to go without her.
+Lucy was very sad and ran back home to tell her parents what had happened. But when she got home, her parents were very angry. They scolded her and told her that she couldn't get her money without the toy. Lucy was very sad and felt very poor. 
+That evening Lucy's mom and
