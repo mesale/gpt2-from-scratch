@@ -1,0 +1,98 @@
+### temperature=0 | prompt='Once upon a time'
+Once upon a time, there was a little girl named Lily. She had a big, soft pillow that she loved to hug. One day, Lily's pillow was very dirty. She wanted to clean it, but she didn't know how.
+Lily asked her mom for help. Her mom said, "Let's clean your pillow together." They took the pillow to the sink and washed it. The pillow became clean and shiny.
+Lily was happy to see her pillow clean. She hugged it and said, "Thank you, Mom!" From that day on, Lily always kept her pillow clean and they lived happily ever after.
+
+### temperature=0 | prompt='Tom and Lily went to the park.'
+Tom and Lily went to the park. They saw a big pond with many ducks. They wanted to feed them.
+"Look, a duck!" Tom said. "Can we feed it?"
+"I don't know," Lily said. "Maybe it is hungry. Maybe it wants to eat."
+They ran to the pond and threw some bread to the ducks. The ducks came closer and ate the bread. They quacked and quacked.
+"Can we feed the ducks too?" Lily asked.
+"Sure," Tom said. "But be careful. The water is deep and the ducks are scared."
+They threw some bread to the ducks. The ducks came closer and ate the bread. They quacked and quacked.
+"Can we feed the ducks too?" Lily asked.
+"Sure," Tom said. "But be careful. The water is deep and the ducks are scared."
+They threw some bread to the ducks. The ducks came closer and ate the bread. They qu
+
+### temperature=0 | prompt='The little dog was sad because'
+The little dog was sad because he had no friends. He walked around the park, looking for someone to play with. He saw a big tree and thought, "Maybe I can find a friend there."
+The little dog walked to the tree and saw a little girl. She was playing with a ball. The little dog walked up to her and said, "Hi, I am a dog. Do you want to play with me?" The little girl smiled and said, "Yes, I am Lily. I am a dog, but I have no friends."
+The little dog was happy to have a new friend. They played together all day. The little dog was not sad anymore. He had a new friend, and they had lots of fun.
+
+### temperature=0.7 | prompt='Once upon a time'
+Once upon a time, there was a little girl named Sue. Sue had a special power. She could make things vanish. One day, Sue saw a small, delicate bird with a hurt wing. She wanted to help the bird, so she took it home.
+Sue took care of the bird every day. She made it feel better. She played with it and gave it food and water. Sue's friends saw her being kind and wanted to be her friend too.
+One day, Sue took out her magic and talked to the bird. The bird was happy and started to fly away. Sue was happy she could help the bird. But then, something unexpected happened. The bird turned into a fairy! The fairy thanked Sue for her kind words. She flew away and came back with a magic wand. Sue waved the wand and the bird stayed with her. They were the best of friends, and Sue learned that being kind and caring for others can make magic happen.
+
+### temperature=0.7 | prompt='Once upon a time'
+Once upon a time, there was a kind sailor named Tom. Tom had a big boat. He liked to sail on the sea. One day, Tom saw a little fish. The little fish was sad.
+Tom asked the little fish, "Why are you sad?" The little fish said, "I can't find my toy. I am lost." Tom wanted to help the fish. He thought and thought. Then, he had an idea.
+Tom sailed far away to find the toy. He found it on a big island. The little fish was very happy. The little fish said, "Thank you, Tom!" Then, something unexpected happened. The little fish turned into a big, beautiful bird. The bird said, "I will give you a wish." Tom wished for more friends to sail on. The big, pretty bird made the wish come true. Tom and the bird sailed together on the sea, and they were best friends.
+
+### temperature=0.7 | prompt='Tom and Lily went to the park.'
+Tom and Lily went to the park. They saw a big tent with a sign that said "Keep Out". Tom and Lily wanted to go in, but they did not know how to get out.
+They saw a man with a hat and a suit. He was a doctor. He said they needed help. He said they needed an operation and a needle. He said they should not go in the tent, but they should be careful.
+Tom and Lily felt sorry for the man. They did not know he was bad. They said they were brave and brave. They said they would help him. They said they would help him and tell their mom.
+They waited for the operation. They heard a loud noise. It was the park ranger. She had a big bag with her. She saw Tom and Lily and the man with the parwor. She was angry. She said they did not want to go in the tent. She said they were going to stay in the park
+
+### temperature=0.7 | prompt='Tom and Lily went to the park.'
+Tom and Lily went to the park. They saw a big pond with many ducks and fish. They wanted to feed the ducks and fish. They ran to the pond and looked for some bread.
+"Look, a duck!" Tom said. He threw a big piece of bread to the ducks. The ducks came closer and ate the bread. Tom and Lily were happy.
+But then, a man came and took the bread from the pond. He threw it to the ducks and watched them eat. The ducks were hungry and curious. They quacked and quacked.
+"Hey, you kids! Give me the bread!" the man said. He was angry and scared. He picked up the bread and threw it to the ducks.
+The ducks saw the man and tried to bite the man. They quacked and scratched and tried to get free. But the man was faster and tried to grab the bread. He threw the bread back to the ducks and made them quack.
+"Stop,
+
+### temperature=0.7 | prompt='The little dog was sad because'
+The little dog was sad because he was all alone. He wanted to play with the other dogs, but they were too scared of him. They came up with a plan to help him. The plan worked!
+The next day, the little dog came back with a big smile. He said, "I will play with you!" The other dogs were surprised and happy. They all played together and had lots of fun. The little dog was not alone anymore.
+
+### temperature=0.7 | prompt='The little dog was sad because'
+The little dog was sad because he lost his toy. He looked everywhere for it, but he could not find it. He was very frustrated and did not know what to do.
+Then, he saw a big cat. The cat had the toy in his mouth! The little dog was so happy to see his toy again. He played with it all day long. But then, something unexpected happened. The cat took the toy from the dog and ran away.
+The little dog was very sad. He did not know where his toy was. He looked for the cat everywhere, but he could not find it. The little dog cried and cried. He never found his toy and he never saw it again.
+
+### temperature=1.0 | prompt='Once upon a time'
+Once upon a time there was a bright gray man. He had a special secret door. Every day he would try to open it. He would try and try, but he couldn't open the door. He was very curious.
+One day he stood at a big door and pushed it open. Inside was a bottle with a very bright red ball on it. Inside he had lots of it. He was so excited to see what would happen.
+The man opened the bottle and out popped a bright orange ball. It was so bright and round! He was so happy that he had pressed the longest of spot in perfectly like the bright red ball.
+The next day the man jumped out of his bed and was filled with a warm, yellow colour and bright orange ball. Everyone was so amazed and they all played with the open ball. It was so much fun!
+
+### temperature=1.0 | prompt='Once upon a time'
+Once upon a time, there was a kind sailor named Tom. Tom had a little boat that he loved to sail on the sea. He would sail every day and show it to all his friends.
+One day, a big storm came. The sky was dark and the wind was harsh. Tom wanted to leave his home because he was scared of the storm. So, he decided to sail back to his boat.
+Tom sailed through the storm and met many new friends. They all loved his little boat and his useful sail. They played together on the sea and had fun. And they all lived happily ever after.
+
+### temperature=1.0 | prompt='Tom and Lily went to the park.'
+Tom and Lily went to the park. They saw a big tent with a horn. The tent was white and had a bell and a tag. They wanted to go inside and play with it.
+"ckeys are fun. Let's go!" Tom said.
+"OK. Let's go. Come on, let's go," Lily said.
+They ran to the tent. They opened the boxes and parts. They saw a lot of boxes and books. They heard a voice.
+"Hello, kids! I'm a new man. I have many things to show the kids. Do you want to see what is in the tent?" He pointed to a tent.
+Tom and Lily looked at the tent. It was a big building. There were lights, horns and floads. It was mysterious. They saw people doing tricks and open presents.
+"Wow! Can we see what's in there?" Tom asked.
+"Maybe. Or maybe it's a magic roof. Maybe someone
+
+### temperature=1.0 | prompt='Tom and Lily went to the park.'
+Tom and Lily went to the park. They liked to play with their ball and run and jump. The sun was bright and the air was warm.
+"Look, Lily, there was a fox!" Tom said, pointing to a big black rabbit.
+"Wow, Tom, it's so cute!" Lily said, seeing the rabbit too. They wanted to pet it and see the fox better.
+They let go of their ball and ran after it. The fox was fast and hungry. It ran under a big tree.
+"Hey, fox, get my ball!" Tom shouted.
+"No, it's mine! You dropped it!" Lily said.
+They ran to the tree and tried to get the ball. But the fox was fast and jumped to the tree. It grabbed the ball and ran away.
+Tom and Lily were sad and angry. They lost their ball. They did not see the fox anymore.
+"Wow, they did not are magic!" Tom said.
+"Maybe we can
+
+### temperature=1.0 | prompt='The little dog was sad because'
+The little dog was sad because he was all alone. He wanted to be friend and play with other dogs, but no one would be his friend. He wanted to go out and explore, but he just couldn't.
+Suddenly, he felt a whistle! He grabbed hold of it and it blew and the little dog's belly made a loud sound. He was so surprised he started to run and bark.
+The little dog felt so upset, he started to cry. He knew he had been bad for a long time, lying on the ground, and his unique feelings were broken. He wished he could be his best friend in a different like the other dogs.
+But the next day, the dog was so lonely and all alone. He never saw that his unique and brave dog who made him feel so sad. The end.
+
+### temperature=1.0 | prompt='The little dog was sad because'
+The little dog was sad because he lost his toy. He cried and ran back to his home. The bad thing happened to the sky. The little dog was scared. He was lost and did not know how to find his toy.
+A big bird saw the little dog cry. The bird wanted to help him. The bird flew high and looked all around the dog. The bird saw the bad thing and flew away. The bad thing in the sky came back to the little dog. The little dog was happy and thanked the bird. They became friends and played together. The dog did not cry anymore.
+

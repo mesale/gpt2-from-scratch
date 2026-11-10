@@ -1,0 +1,32 @@
+model:
+  bias: true
+  block_size: 256
+  dropout: 0.0
+  n_embd: 384
+  n_head: 6
+  n_layer: 6
+  pre_ln: true
+  tie_weights: true
+  vocab_size: 4096
+train:
+  amp: true
+  batch_size: 64
+  beta1: 0.9
+  beta2: 0.95
+  data_dir: /kaggle/input/datasets/mesaletsegaye/tinystories-v2-bpe4096/data
+  eval_interval: 500
+  eval_iters: 50
+  grad_accum: 2
+  grad_clip: 1.0
+  log_interval: 50
+  lr: 0.001
+  max_steps: 8000
+  min_lr: 0.0001
+  out_dir: /kaggle/working/runs
+  resume: true
+  run_name: tinystories_main
+  seed: 1337
+  train_file: tinystories_train.bin
+  val_file: tinystories_val.bin
+  warmup_steps: 300
+  weight_decay: 0.1
