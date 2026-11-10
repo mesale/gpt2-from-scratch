@@ -44,8 +44,8 @@ def load_bin(path):
     """Memory-map a .bin file: acts like an array, but is read from disk on demand."""
     return np.memmap(path, dtype=np.uint16, mode="r")
 
-def get_batch(data, batch_size, block_size, device="cpu"):
-    ix = torch.randint(len(data) - block_size, (batch_size,)).tolist()   # random start positions
+def get_batch(data, batch_size, block_size, device="cpu", generator=None):
+    ix = torch.randint(len(data) - block_size, (batch_size,), generator=generator).tolist()   # random start positions
     x = torch.stack([torch.from_numpy(data[i : i + block_size].astype(np.int64)) for i in ix])
     y = torch.stack([torch.from_numpy(data[i + 1 : i + 1 + block_size].astype(np.int64)) for i in ix])
     return x.to(device), y.to(device)

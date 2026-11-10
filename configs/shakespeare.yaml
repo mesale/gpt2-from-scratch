@@ -1,0 +1,19 @@
+model:
+  vocab_size: 4096
+  block_size: 256
+  n_layer: 6
+  n_head: 6
+  n_embd: 384
+  dropout: 0.2
+train:
+  run_name: shakespeare_debug
+  train_file: shk_train.bin
+  val_file: shk_val.bin
+  batch_size: 32
+  max_steps: 1500
+  lr: 0.001
+  min_lr: 0.0001
+  warmup_steps: 100
+  eval_interval: 100
+  eval_iters: 40
+  log_interval: 10
