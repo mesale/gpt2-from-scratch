@@ -1,7 +1,7 @@
 import torch
 import torch.nn.functional as F
 from src.config import GPTConfig
-from src.model import Embeddings, CausalSelfAttention
+from src.model import Embeddings, CausalSelfAttention, LayerNorm, FeedForward, Block
 
 def test_embeddings_shape():
     cfg = GPTConfig()
@@ -49,3 +49,40 @@ def test_matches_torch_sdpa():
     ref = F.scaled_dot_product_attention(q, k, v, is_causal=True)
     ref = attn.out_proj(ref.transpose(1, 2).reshape(2, 12, cfg.n_embd))
     assert torch.allclose(attn(x), ref, atol=1e-5)
+
+def test_layernorm_matches_torch():
+    torch.manual_seed(0)
+    x = torch.randn(2, 5, 16) * 3 + 1
+    mine, ref = LayerNorm(16), torch.nn.LayerNorm(16, eps=1e-5)
+    with torch.no_grad():                               # random γ, β so the test isn't trivial
+        g, b = torch.randn(16), torch.randn(16)
+        mine.weight.copy_(g); mine.bias.copy_(b)
+        ref.weight.copy_(g); ref.bias.copy_(b)
+    assert torch.allclose(mine(x), ref(x), atol=1e-5)
+
+def test_layernorm_statistics():
+    out = LayerNorm(32)(torch.randn(4, 7, 32) * 10 + 5)
+    assert torch.allclose(out.mean(-1), torch.zeros(4, 7), atol=1e-5)
+    assert torch.allclose(out.var(-1, unbiased=False), torch.ones(4, 7), atol=1e-3)
+
+def test_ffn_shape_and_params():
+    cfg = GPTConfig(); C = cfg.n_embd
+    ffn = FeedForward(cfg)
+    assert ffn(torch.randn(2, 10, C)).shape == (2, 10, C)
+    assert sum(p.numel() for p in ffn.parameters()) == 8 * C * C + 5 * C
+
+def test_block_params_shape_causality():
+    torch.manual_seed(0)
+    cfg = GPTConfig(); C = cfg.n_embd
+    blk = Block(cfg).eval()
+    assert sum(p.numel() for p in blk.parameters()) == 12 * C * C + 13 * C   # = 1,774,464
+    x = torch.randn(1, 10, C)
+    x2 = x.clone(); x2[:, 6:] = torch.randn(1, 4, C)
+    assert blk(x).shape == x.shape
+    assert torch.allclose(blk(x)[:, :6], blk(x2)[:, :6], atol=1e-5)          # no leak through a block
+
+def test_post_ln_block():
+    cfg = GPTConfig(pre_ln=False)
+    out = Block(cfg).eval()(torch.randn(2, 10, cfg.n_embd) * 4 + 2)
+    assert out.shape == (2, 10, cfg.n_embd)
+    assert torch.allclose(out.mean(-1), torch.zeros(2, 10), atol=1e-5)       # last op is a LayerNorm

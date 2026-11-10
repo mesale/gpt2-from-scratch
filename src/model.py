@@ -56,3 +56,54 @@ class CausalSelfAttention(nn.Module):
         y = y.transpose(1, 2).contiguous().view(B, T, C)  # concatenate heads: (B, T, C)
         y = self.resid_drop(self.out_proj(y))
         return (y, att) if return_attn else y
+class LayerNorm(nn.Module):
+    """Normalize each token's C features to mean 0 / variance 1, then rescale: y = γ·x̂ + β."""
+
+    def __init__(self, dim, eps=1e-5):
+        super().__init__()
+        self.eps = eps
+        self.weight = nn.Parameter(torch.ones(dim))    # γ, learnable scale
+        self.bias = nn.Parameter(torch.zeros(dim))     # β, learnable shift
+
+    def forward(self, x):                              # (..., C)
+        xf = x.float()                                 # statistics in fp32: safer under fp16 training
+        mean = xf.mean(dim=-1, keepdim=True)           # (..., 1)
+        var = xf.var(dim=-1, unbiased=False, keepdim=True)
+        x_hat = ((xf - mean) / torch.sqrt(var + self.eps)).to(x.dtype)
+        return self.weight * x_hat + self.bias
+
+
+class FeedForward(nn.Module):
+    """Position-wise FFN, paper §3.3 with GELU as in GPT-2: (B,T,C) -> (B,T,4C) -> (B,T,C)."""
+
+    def __init__(self, cfg: GPTConfig):
+        super().__init__()
+        C = cfg.n_embd
+        self.fc1 = nn.Linear(C, 4 * C, bias=cfg.bias)
+        self.fc2 = nn.Linear(4 * C, C, bias=cfg.bias)
+        self.act = nn.GELU(approximate="tanh")         # the GELU variant GPT-2 used
+        self.drop = nn.Dropout(cfg.dropout)
+
+    def forward(self, x):
+        return self.drop(self.fc2(self.act(self.fc1(x))))
+
+
+class Block(nn.Module):
+    """One Transformer block: attention + FFN, each wrapped in a residual connection."""
+
+    def __init__(self, cfg: GPTConfig):
+        super().__init__()
+        self.pre_ln = cfg.pre_ln
+        self.ln1 = LayerNorm(cfg.n_embd)
+        self.attn = CausalSelfAttention(cfg)
+        self.ln2 = LayerNorm(cfg.n_embd)
+        self.ffn = FeedForward(cfg)
+
+    def forward(self, x):                              # (B, T, C) -> (B, T, C)
+        if self.pre_ln:                                # GPT-2: normalize each sublayer's input
+            x = x + self.attn(self.ln1(x))
+            x = x + self.ffn(self.ln2(x))
+        else:                                          # original paper: normalize after the add
+            x = self.ln1(x + self.attn(x))
+            x = self.ln2(x + self.ffn(x))
+        return x
