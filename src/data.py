@@ -1,4 +1,5 @@
 import numpy as np
+import torch
 from itertools import islice
 from src.tokenizer import EOT
 
@@ -38,3 +39,13 @@ def encode_file(txt_path, bin_path, tok, batch_size=20_000, max_stories=None):
                 out.write(ids.tobytes())
                 total += len(ids)
     return total
+
+def load_bin(path):
+    """Memory-map a .bin file: acts like an array, but is read from disk on demand."""
+    return np.memmap(path, dtype=np.uint16, mode="r")
+
+def get_batch(data, batch_size, block_size, device="cpu"):
+    ix = torch.randint(len(data) - block_size, (batch_size,)).tolist()   # random start positions
+    x = torch.stack([torch.from_numpy(data[i : i + block_size].astype(np.int64)) for i in ix])
+    y = torch.stack([torch.from_numpy(data[i + 1 : i + 1 + block_size].astype(np.int64)) for i in ix])
+    return x.to(device), y.to(device)
