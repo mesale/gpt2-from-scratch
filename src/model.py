@@ -146,3 +146,28 @@ class GPT(nn.Module):
 
     def num_params(self):
         return sum(p.numel() for p in self.parameters())           # shared tensors counted once
+    
+    @torch.no_grad()
+    def generate(self, idx, max_new_tokens, temperature=1.0, eos_id=None):
+        """idx: (B, T) prompt IDs -> (B, T + new) IDs. temperature=0 means greedy.
+        Stops early once every row has produced eos_id; rows that finished sooner keep
+        generating, so truncate each row at its first eos_id afterwards."""
+        was_training = self.training
+        self.eval()
+        finished = torch.zeros(idx.size(0), dtype=torch.bool, device=idx.device)
+        for _ in range(max_new_tokens):
+            idx_cond = idx[:, -self.cfg.block_size:]                  # crop to the context window
+            logits, _ = self(idx_cond)                                # (B, T', V)
+            logits = logits[:, -1, :]                                 # (B, V): last position only
+            if temperature == 0:
+                next_id = logits.argmax(dim=-1, keepdim=True)         # (B, 1)
+            else:
+                probs = F.softmax(logits / temperature, dim=-1)       # (B, V)
+                next_id = torch.multinomial(probs, num_samples=1)     # (B, 1)
+            idx = torch.cat([idx, next_id], dim=1)                    # (B, T + 1)
+            if eos_id is not None:
+                finished |= next_id.squeeze(1) == eos_id
+                if finished.all():
+                    break
+        self.train(was_training)
+        return idx

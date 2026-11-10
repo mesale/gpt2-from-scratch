@@ -1,0 +1,20 @@
+model:
+  vocab_size: 4096
+  block_size: 256
+  n_layer: 6
+  n_head: 6
+  n_embd: 384
+  dropout: 0.0
+train:
+  run_name: tinystories_main
+  train_file: tinystories_train.bin
+  val_file: tinystories_val.bin
+  batch_size: 64
+  grad_accum: 2
+  max_steps: 8000
+  lr: 0.001
+  min_lr: 0.0001
+  warmup_steps: 300
+  eval_interval: 500
+  eval_iters: 50
+  log_interval: 50
