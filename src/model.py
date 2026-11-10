@@ -107,3 +107,42 @@ class Block(nn.Module):
             x = self.ln1(x + self.attn(x))
             x = self.ln2(x + self.ffn(x))
         return x
+class GPT(nn.Module):
+    """Decoder-only Transformer: token IDs (B, T) -> logits (B, T, vocab)."""
+
+    def __init__(self, cfg: GPTConfig):
+        super().__init__()
+        self.cfg = cfg
+        self.embed = Embeddings(cfg)
+        self.blocks = nn.ModuleList([Block(cfg) for _ in range(cfg.n_layer)])
+        self.ln_f = LayerNorm(cfg.n_embd)                          # final LN (needed in pre-LN)
+        self.lm_head = nn.Linear(cfg.n_embd, cfg.vocab_size, bias=False)
+        if cfg.tie_weights:
+            self.lm_head.weight = self.embed.wte.weight            # one shared tensor
+
+        self.apply(self._init_weights)                             # GPT-2 init everywhere...
+        for name, p in self.named_parameters():                    # ...then shrink residual writers
+            if name.endswith("attn.out_proj.weight") or name.endswith("ffn.fc2.weight"):
+                nn.init.normal_(p, mean=0.0, std=0.02 / math.sqrt(2 * cfg.n_layer))
+
+    @staticmethod
+    def _init_weights(module):
+        if isinstance(module, nn.Linear):
+            nn.init.normal_(module.weight, mean=0.0, std=0.02)
+            if module.bias is not None:
+                nn.init.zeros_(module.bias)
+        elif isinstance(module, nn.Embedding):
+            nn.init.normal_(module.weight, mean=0.0, std=0.02)
+
+    def forward(self, idx, targets=None):
+        x = self.embed(idx)                                        # (B, T, C)
+        for block in self.blocks:
+            x = block(x)                                           # (B, T, C)
+        logits = self.lm_head(self.ln_f(x))                        # (B, T, V)
+        loss = None
+        if targets is not None:
+            loss = F.cross_entropy(logits.reshape(-1, logits.size(-1)), targets.reshape(-1))
+        return logits, loss
+
+    def num_params(self):
+        return sum(p.numel() for p in self.parameters())           # shared tensors counted once

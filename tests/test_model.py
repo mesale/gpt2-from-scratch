@@ -1,7 +1,8 @@
 import torch
 import torch.nn.functional as F
+import math
 from src.config import GPTConfig
-from src.model import Embeddings, CausalSelfAttention, LayerNorm, FeedForward, Block
+from src.model import Embeddings, CausalSelfAttention, LayerNorm, FeedForward, Block, GPT
 
 def test_embeddings_shape():
     cfg = GPTConfig()
@@ -86,3 +87,50 @@ def test_post_ln_block():
     out = Block(cfg).eval()(torch.randn(2, 10, cfg.n_embd) * 4 + 2)
     assert out.shape == (2, 10, cfg.n_embd)
     assert torch.allclose(out.mean(-1), torch.zeros(2, 10), atol=1e-5)       # last op is a LayerNorm
+
+def test_gpt_shapes_and_initial_loss():
+    torch.manual_seed(0)
+    cfg = GPTConfig()
+    model = GPT(cfg)
+    idx = torch.randint(0, cfg.vocab_size, (4, 64))
+    targets = torch.randint(0, cfg.vocab_size, (4, 64))    # independent of idx, on purpose
+    logits, loss = model(idx, targets)
+    assert logits.shape == (4, 64, cfg.vocab_size)
+    assert abs(loss.item() - math.log(cfg.vocab_size)) < 0.3   # expect about 8.4
+    assert model(idx)[1] is None
+
+def test_param_counts_and_tying():
+    cfg = GPTConfig()
+    tied = GPT(cfg)
+    assert tied.lm_head.weight is tied.embed.wte.weight
+    assert tied.num_params() == 12_318_720
+    assert GPT(GPTConfig(tie_weights=False)).num_params() == 12_318_720 + cfg.vocab_size * cfg.n_embd
+
+def test_gpt_causality():
+    torch.manual_seed(0)
+    cfg = GPTConfig()
+    model = GPT(cfg).eval()
+    a = torch.randint(0, cfg.vocab_size, (1, 12))
+    b = a.clone(); b[:, 8:] = torch.randint(0, cfg.vocab_size, (1, 4))
+    la, lb = model(a)[0], model(b)[0]
+    assert torch.allclose(la[:, :8], lb[:, :8], atol=1e-5)
+    assert not torch.allclose(la[:, 8:], lb[:, 8:])
+
+def test_init_stds():
+    cfg = GPTConfig()
+    model = GPT(cfg)
+    assert abs(model.embed.wte.weight.std().item() - 0.02) < 0.002
+    assert abs(model.blocks[0].attn.out_proj.weight.std().item()
+               - 0.02 / math.sqrt(2 * cfg.n_layer)) < 0.001
+
+def test_can_overfit_one_batch():
+    torch.manual_seed(0)
+    cfg = GPTConfig(n_layer=2, n_head=2, n_embd=64, block_size=32, vocab_size=100)
+    model = GPT(cfg)
+    opt = torch.optim.AdamW(model.parameters(), lr=3e-3)
+    x, y = torch.randint(0, 100, (4, 32)), torch.randint(0, 100, (4, 32))
+    first = model(x, y)[1].item()
+    for _ in range(200):
+        _, loss = model(x, y)
+        opt.zero_grad(); loss.backward(); opt.step()
+    assert loss.item() < 0.5 * first

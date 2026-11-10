@@ -10,6 +10,7 @@ class GPTConfig:
     dropout: float = 0.0
     bias: bool = True
     pre_ln: bool = True     # True: GPT-2 style. False: original-paper post-LN
+    tie_weights: bool = True
 
     def __post_init__(self):
         assert self.n_embd % self.n_head == 0, "n_embd must divide evenly across heads"
