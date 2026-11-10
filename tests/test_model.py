@@ -1,8 +1,7 @@
 import torch
-import CausalSelfAttention
 import torch.nn.functional as F
 from src.config import GPTConfig
-from src.model import Embeddings
+from src.model import Embeddings, CausalSelfAttention
 
 def test_embeddings_shape():
     cfg = GPTConfig()
