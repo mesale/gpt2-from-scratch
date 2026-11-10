@@ -1,0 +1,32 @@
+model:
+  bias: true
+  block_size: 256
+  dropout: 0.2
+  n_embd: 384
+  n_head: 6
+  n_layer: 6
+  pre_ln: true
+  tie_weights: true
+  vocab_size: 4096
+train:
+  amp: true
+  batch_size: 32
+  beta1: 0.9
+  beta2: 0.95
+  data_dir: /kaggle/working/data
+  eval_interval: 100
+  eval_iters: 40
+  grad_accum: 1
+  grad_clip: 1.0
+  log_interval: 10
+  lr: 0.001
+  max_steps: 1500
+  min_lr: 0.0001
+  out_dir: /kaggle/working/runs
+  resume: true
+  run_name: shakespeare_debug
+  seed: 1337
+  train_file: shk_train.bin
+  val_file: shk_val.bin
+  warmup_steps: 100
+  weight_decay: 0.1
