@@ -6,7 +6,7 @@ feed-forward network, layer norm, residual connections, Transformer blocks, trai
 tokenizer (vocab 4096). No pretrained models, Hugging Face model code, or existing Transformer blocks are used; the
 only library pieces are tensors, autograd, optimizers, and basic layers (`nn.Linear`, `nn.Embedding`, `nn.Dropout`, `nn.GELU`).
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mesale/gpt2-from-scratch/blob/main/notebooks/demo.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/mesale/gpt2-from-scratch/blob/main/notebooks/demo.ipynb) [![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/mesale/gpt2-from-scratch/blob/main/notebooks/demo.ipynb)
 
 **Technical report:** [`report/report.md`](report/report.md)  
 **Demo notebook** (runs the tests, loads the model, generates text, shows results and attention maps, and trains a small model from scratch; no local setup needed): [`notebooks/demo.ipynb`](notebooks/demo.ipynb)
