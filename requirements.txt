@@ -1,7 +1,9 @@
 torch
 numpy
+pandas
 tokenizers
 datasets
 matplotlib
 tqdm
+pyyaml
 pytest
