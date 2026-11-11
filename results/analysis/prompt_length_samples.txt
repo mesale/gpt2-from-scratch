@@ -1,74 +1,101 @@
 ### prompt_tokens=1 | story 0
 PROMPT: Once
-CONTINUATION:  upon a time, there was a young boy named Tim. Tim loved to build with his toy blocks. He would build big towers with all the blocks he built. One day, Tim wanted to build a tall tower. He started to put one block on top of another.
-Tim's friend, Sam, came over to play. Sam saw the tower and said, "Wow! A tall tower! Can I help?" Tim said, "Yes, let's build it together!" They worked
+CONTINUATION:  upon a time, there was a brave little girl named Lily. She loved to play outside and explore. One day, she found a big, round rock. She wanted to examine it.
+Lily put the rock in her pocket and went to the park. She saw her friend, Tom, playing with a ball. She walked up to Tom and said, "Look, Tom! I found a big, round rock!" Tom looked at the rock and smiled. "Wow, that's a big rock, Lily!" he said.
+Lily and Tom played with the rock and the ball. They threw the ball back and forth. They had so much fun. Then, they went home and told their parents about their adventure.
 
 ### prompt_tokens=1 | story 1
 PROMPT: Tom
-CONTINUATION:  and Lily were playing in the rain. They liked to make mud pies and splash each other with water. They had a big bucket of water and poured it on their pies. They laughed and had fun.
-"Look, Lily, I made a big mud pie!" Tom said, holding up a small brown thing. It was white and sticky and had flowers on it. "It smells good!"
-"Wow, Tom, that is a nice mud pie!" Lily said,
+CONTINUATION:  and Lily are twins. They like to play with their toys and books. One day, they find a big box in the living room. They see a box with a bow on it. The bow is colorful and has many colors.
+"Wow, look at this!" Tom says. "It is so pretty! I want to play with it!"
+"No, it is mine!" Lily says. "I want to play with it!"
+They both pull the box and the bow rips. They feel sad and angry. They want to play with the bow and the box.
+"Please, don't be mad," Tom says. "You are ruining the box. It is not yours. It is my fault."
+"Why?" Lily says. "We both want to play with the bow and the box. They are fun and pretty."
+Tom thinks for a moment. He likes the idea of playing with the bow and the box. He nods
 
 ### prompt_tokens=1 | story 2
 PROMPT: Once
-CONTINUATION:  upon a time, there was a little boy named Tim. He had a big, soft bed in his room. Tim liked to sleep on his bed and play with his toys.
-One day, Tim found a small, wet bug under his bed. He was very surprised. Tim thought the bug was just a little bug. He wanted to help the bug. So, Tim put on his raincoat and went outside.
-Tim found the bug under his bed. He gave the bug a
+CONTINUATION:  upon a time, there was a boy named Tim. Tim loved to play outside. One day, he saw a big tree with a hole in it. Tim thought it was a good place to sit and rest.
+Tim put on his tight hat and went to the tree. He sat down and looked at the hole. He saw a little bird sitting on one of the branches. The bird was singing a pretty song.
+Tim smiled at the bird. The bird sat on the tree and sang along with him. They became good friends. Tim and the bird played in the tree every day. They were happy and had fun together.
 
 ### prompt_tokens=4 | story 0
 PROMPT: Once upon a time
-CONTINUATION: , there was a little girl named Sue. Sue had a special power. She could make things vanish. One day, Sue saw a small, delicate bird with a hurt wing. She wanted to help the bird, so she took it home.
-Sue took care of the bird every day. She made it feel better. She played with it and gave it food and water. Sue's friends saw her being kind and wanted to be her friend too.
-One day, Sue took out her
+CONTINUATION: , there was a little boy named Tim. Tim had a big, red ball. He loved to play with the ball every day. One day, Tim saw a big, bad cat in the yard. The cat was hungry and wanted to take Tim's ball. Tim was scared and he did not want to lose his ball.
+Tim had an idea. He would take the bad cat and make a threat. So, he picked up the terrible cat and threw it far away. The cat ran after the ball, but it was too fast. The cat ran away and never came back. Tim felt bad for what he did.
+The next day, Tim's mom saw the bad cat and was very sad. She told Tim that the bad cat did not take his ball. She said he should not have taken it. Tim felt bad for his mom. He said sorry to the cat and took the bad cat home. From that day, Tim learned to be careful with his toys
 
 ### prompt_tokens=4 | story 1
 PROMPT: Tom and Lily were
-CONTINUATION:  twins who liked to play together. One day, they found a big box in their room. They opened the box and saw many things inside. They saw a doll, a car, a book, a book, and a book.
-"Can we keep them?" Tom asked, holding the doll.
-"No, they are mine. You have your own toys," Lily said, holding the doll.
-"But I like these things. They are fun and pretty," Tom said, holding
+CONTINUATION:  playing in the park. They liked to run and jump and slide. They saw a big tree with a hole in it. They wanted to see what was inside.
+"Let's go in the hole!" Tom said.
+"OK, but be careful. The hole is deep and dark." Lily said.
+They crawled into the hole and felt something soft and warm. It was a skeleton. It had black eyes and a long nose. It was sleeping.
+"Wow, a skeleton!" Lily said.
+"Can we keep it?" Tom asked.
+"Sure, you can keep it as a friend. It is soft and warm." Lily said.
+"Thank you, we can keep it as a friend. We can take good care of it." Tom said.
+They whispered in each other's ear. They felt happy and curious. They pretended they were camping again.
 
 ### prompt_tokens=4 | story 2
 PROMPT: Once upon a time
-CONTINUATION: , there was a little girl named Sue. Sue loved to read novels. She had a big book with many novels in her room. Sue was very excited to read her novels every day.
-One day, Sue could not find her novel. She looked under her bed, behind the door, and in the toy box. She felt sad and sat down to think of her favorite novel. Sue did not know that her novel was magic.
-Leo was persistent. He went
+CONTINUATION: , there was a little girl named Lily. She had a pretty dress that she loved to wear. One day, she wanted to play in the rain with her toys. She put on her dress and went outside to play.
+Lily saw her brother, Tom, playing in the rain. He was wearing a big umbrella. Lily asked, "Tom, do you want to play with me?" Tom said, "Yes, let's play in the rain!"
+Lily and Tom played in the rain, laughing and having fun. They splashed in the puddles and made big puddles. They played until the rain stopped. After a while, they went back inside the house. Lily was happy to have a new friend to wear.
 
 ### prompt_tokens=16 | story 0
 PROMPT: Once upon a time, in a warm and sunny place, there was a big
-CONTINUATION:  tree. Under the tree, there was a small tree. The tree had a tiny garden with a nice green frog living there. The frog liked to watch the water come down to the tree.
-One day, a little boy named Tim came to the tree. He saw the frog sitting in its warm, green frog. Tim said, "Hello, frog! Will you be my friend?" The frog nodded its head and said, "Yes, Tim! I would love to be your friend
+CONTINUATION:  tree with a little hole in it. A little bird lived in the tree. The bird had a friend, a squirrel, who lived in the tree. The squirrel loved to play and have fun with the bird.
+One day, the bird and the squirrel decided to play a game. They would hide in the tree and then find each other. The bird would peek and see the squirrel. The squirrel would look and look for the bird, but he would not find it.
+The bird was sad, but he did not give up. He kept looking and looking. Finally, he found the squirrel and the squirrel found him. The bird was happy to see his friend again. They played and laughed together in the warm and sunny place.
 
 ### prompt_tokens=16 | story 1
 PROMPT: Tom and Lily were playing with their toys in the living room. They liked to
-CONTINUATION:  pretend they were pirates and use a big cardboard box as a ship. Tom had a red truck and Lily had a blue doll.
-"Look, I made a treasure map!" Tom said, pointing to his map. "It has a red victory and a big map."
-Lily looked at her map and saw many of places. She had never seen anything like it before. She wanted to find out more about it, but she also had a red car.
-"Tom,
+CONTINUATION:  make noises and pretend to be animals. Tom had a big truck that he gave a horn. Lily had a small doll that she liked very much. It was pink and had flowers on it.
+"Look at my truck, it is pink and have a horn," Tom said. "It can go fast and make loud noises."
+Lily nodded and smiled. She liked her doll very much. She wanted to see how it made noises and move. She had a small toy car that she took with her. She liked to zoom it around the floor and make loud noises.
+"Can I play with your truck, please?" Lily asked Tom. "I want to play with it."
+Tom shook his head and said, "No, it is mine. You have your own toys."
+Lily felt sad. She wanted to play with her doll, but she did not have a toy car. She tried to take it from Tom's. They started to fight over the doll.
+
 
 ### prompt_tokens=16 | story 2
 PROMPT: Once upon a time there was a little girl named Lucy. She loved to go
-CONTINUATION:  on adventures. One day she decided to go on an adventure. She wanted to find something special, so she packed all her things.
-As she walked, Lucy noticed a big, dark cave. "Excuse me, what is this?" she asked, and it was very dark inside. She slowly peeked through the cave and saw that it was full of sparkling creatures.
-Suddenly, Lucy heard a voice coming from the cave. "Hello! Who are you
+CONTINUATION:  to the market with her mum. Today, Lucy was so excited.
+When they got to the market, Lucy saw lots of people. She saw apples, bananas, and oranges. She asked her mum, "Can I have some oranges, please?"
+Her mum said, "Yes, of course."
+So Lucy and her mum bought the oranges. They went home, and Lucy ate them all up. She was so happy to have so many oranges. 
+Lucy was so proud that she had a tasty breakfast. She was so excited to show everyone the new prunes.
 
 ### prompt_tokens=64 | story 0
 PROMPT: Once upon a time, in a warm and sunny place, there was a big pit. A little boy named Tom liked to play near the pit. One day, Tom lost his red ball. He was very sad.
 Tom asked his friend, Sam, to help him search for the ball. They looked high and
-CONTINUATION:  low, near the pit, but the ball was still lost. They did not give up. They asked their friends in the park, "Have you seen my red ball?"
-Finally, they found the ball near the pit. Tom was very happy. He said, "Thank you, Sam!" They played with the ball and had lots of fun. Tom learned that when you are sad, you can still find what you lost.
+CONTINUATION:  low, but they could not find it. Tom was very sad. Then, he saw a big dog. The dog had Tom's red ball in its mouth. Tom was not scared, he was brave.
+Tom asked the dog, "Give me my ball back. It is mine." The dog gave the ball back to Tom. Tom was very happy. He played with his red ball and the dog all day. They had lots of fun. Tom and the dog became best friends.
 
 ### prompt_tokens=64 | story 1
 PROMPT: Tom and Lily were playing with their toys in the living room. They liked to build towers and bridges with their blocks and cars. Tom was very proud of his tall tower. He wanted to make it even taller, so he reached for more blocks.
 "Tom, can I have some blocks
-CONTINUATION:  too?" Lily asked, holding a block that was not bigger than Tom's.
-"No, Lily, these are my blocks. You have a lot of blocks. You are the best," Tom said, holding the block.
-They both reached for the block and pulled hard. They started to pull and tug on the block. They did not hear their mom coming into the room.
-"Tom, Lily, what are you doing? Why are you fighting over a block?" Mom asked
+CONTINUATION: , please?" Lily asked.
+Tom shook his head. "No, Lily, these are my blocks. You can share them with me."
+Lily felt sad and angry. She did not want to share her blocks with Tom. She liked to make her own tower. She saw Tom was angry and had an idea.
+"Tom, can I have some of your blocks?" Lily asked. "Can I have some of your blocks?"
+Tom did not want to share. He liked his blocks too much. He tried to grab some of Lily's blocks and put them in his tower.
+"No, Lily, these are my blocks!" Tom said. "You can't have them. Go away!"
+Lily and Tom started to argue. They both wanted to make their towers fall down. They both got angry and sad.
+Their mom heard them and came to see what was wrong. She saw what were you doing. She asked them what was wrong.
+"
 
 ### prompt_tokens=64 | story 2
 PROMPT: Once upon a time there was a little girl named Lucy. She loved to go to the store to buy sweets with her mom and dad. On this special day, Lucy entered the store with her mom and dad, feeling so excited.
 As they were looking around, Lucy noticed a little girl playing with a
-CONTINUATION:  toy. She was so jealous of her toy and wanted to get it for her, but her parents said no and said that it was not allowed to go without her.
-Lucy was very sad and ran back home to tell her parents what had happened. But when she got home, her parents were very angry. They scolded her and told her that she couldn't get her money without the toy. Lucy was very sad and felt very poor. 
-That evening Lucy's mom and
+CONTINUATION:  doll. The girl was having so much fun, she wanted to join in.
+"Can I join you?" asked Lucy.
+"Yes!" said the little girl.
+Lucy was so excited that she ran over and asked the girl if she wanted to join.
+"Yes!" said the girl with a smile.
+The girl was so happy that she said yes!
+Lucy and her parents soon reached the store to buy the doll. They bought it and Lucy was so excited to put it on her table.
+"That was an expensive doll!" said Lucy's mom.
+Lucy smiled and hugged the girl. She was so happy to have a new toy.
