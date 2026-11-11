@@ -143,6 +143,49 @@ def position_experiment(model, tok, stories, device, out_dir):
     plt.close(fig)
 
 
+@torch.no_grad()
+def loss_vs_context(model, tok, stories, device, ks=(1, 2, 4, 8, 16, 32, 64, 127),
+                    targets=range(128, 200, 8), n=500, batch=100):
+    """Loss on FIXED target tokens when the model only sees the previous k tokens.
+
+    The target at position t is token t of [EOT] + story[:200]; the input is the k tokens just
+    before it (k=None: the whole prefix). Returns {k: mean loss, ..., "full": mean loss}."""
+    eot = tok.token_to_id(EOT)
+    seqs = torch.tensor([[eot] + s[:200] for s in stories[:n]], dtype=torch.long, device=device)
+    results = {}
+    for k in list(ks) + [None]:
+        total, count = 0.0, 0
+        for t in targets:
+            lo = 0 if k is None else t - k
+            x, y = seqs[:, lo:t], seqs[:, t]                  # window before t, and the target tokens
+            for i in range(0, x.size(0), batch):
+                logits, _ = model(x[i:i + batch])
+                total += F.cross_entropy(logits[:, -1, :], y[i:i + batch], reduction="sum").item()
+                count += x[i:i + batch].size(0)
+        results["full" if k is None else k] = total / count
+    return results
+
+
+def context_experiment(model, tok, stories, device, out_dir):
+    res = loss_vs_context(model, tok, stories, device)
+    full = res.pop("full")
+    for k, v in res.items():
+        print(f"previous {k:>3} tokens: loss {v:.3f}")
+    print(f"full prefix (128-192 tokens): loss {full:.3f}")
+    pd.DataFrame({"context": [str(k) for k in res] + ["full"], "loss": list(res.values()) + [full]}).to_csv(
+        os.path.join(out_dir, "loss_vs_context.csv"), index=False)
+    fig, ax = plt.subplots(figsize=(6, 3.8))
+    ax.plot(list(res), list(res.values()), "o-", label="only the previous k tokens")
+    ax.axhline(full, ls="--", color="gray", label="full prefix")
+    ax.set_xscale("log", base=2)
+    ax.set_xlabel("context length k (tokens)")
+    ax.set_ylabel("loss on fixed target tokens (nats)")
+    ax.legend()
+    ax.grid(alpha=0.3)
+    fig.savefig(os.path.join(out_dir, "loss_vs_context.png"), dpi=150, bbox_inches="tight")
+    plt.close(fig)
+
+
 def report_samples(model, tok, device, out_dir, temps=(0, 0.7, 1.0), max_new=150):
     with open(os.path.join(out_dir, "report_samples.txt"), "w") as f:
         for t in temps:
@@ -161,16 +204,18 @@ def main():
     p.add_argument("--n_prompts", type=int, default=10)
     p.add_argument("--n_samples", type=int, default=3)
     p.add_argument("--max_new", type=int, default=100)
+    p.add_argument("--n_stories", type=int, default=500)
     a = p.parse_args()
 
     os.makedirs(a.out, exist_ok=True)
     device = "cuda" if torch.cuda.is_available() else "cpu"
     model, tok = load_model(a.ckpt, device), load_tokenizer(a.tokenizer)
     val = load_bin(os.path.join(a.data_dir, "tinystories_val.bin"))
-    stories = get_stories(val, tok.token_to_id(EOT), n_stories=500, min_len=200)
+    stories = get_stories(val, tok.token_to_id(EOT), n_stories=a.n_stories, min_len=200)
     print(f"{len(stories)} validation stories with >= 200 tokens | device={device}", flush=True)
 
     print("\n== loss by position ==");  position_experiment(model, tok, stories, device, a.out)
+    print("\n== loss vs context ==");  context_experiment(model, tok, stories, device, a.out)
     print("\n== temperature ==");       temperature_experiment(model, tok, stories, device, a.out,
                                                               a.n_prompts, a.n_samples, a.max_new)
     print("\n== prompt length ==");     prompt_length_experiment(model, tok, stories, device, a.out,
